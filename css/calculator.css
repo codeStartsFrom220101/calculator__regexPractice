@@ -1,0 +1,85 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.calculator {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #efefef;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+.calculator__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.calculator__container button {
+  width: 22%;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  border-radius: 2.6rem;
+  background: #ffffff;
+  border: 1px solid #efefef;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.calculator__container button:hover {
+  background: #efefef;
+}
+.calculator__container button:nth-child(2), .calculator__container button:nth-child(3), .calculator__container button:nth-child(4), .calculator__container button:nth-child(4n+5) {
+  background: #e5edff;
+}
+.calculator__container button:nth-child(2):hover, .calculator__container button:nth-child(3):hover, .calculator__container button:nth-child(4):hover, .calculator__container button:nth-child(4n+5):hover {
+  background: #b9cbf6;
+}
+.calculator__showNewAndOld {
+  width: 100%;
+  position: relative;
+  margin-bottom: 2rem;
+}
+.calculator__oldResult {
+  position: absolute;
+  font-size: 0.8rem;
+  right: 1rem;
+  top: 0.5rem;
+  -webkit-transform-origin: 100 100;
+          transform-origin: 100 100;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.calculator__oldResult.active {
+  font-size: 1.5rem;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+.calculator__newResult {
+  width: 100%;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+  font-size: 1.8rem;
+  text-align: right;
+  border: 1px solid #cfcfcf;
+  border-radius: 0.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.calculator__newResult.active {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  padding: 2rem 1rem 0 1rem;
+}/*# sourceMappingURL=calculator.css.map */

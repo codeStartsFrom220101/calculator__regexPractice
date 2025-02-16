@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/calculator.min.css">
+  <title>計算機</title>
+</head>
+
+<body>
+  <h1>計算機</h1>
+  <div class="calculator calculator__container">
+    <div class="calculator__showNewAndOld">
+      <span class="calculator__oldResult">Use It</span>
+      <input class="calculator__newResult" value="0">
+    </div>
+    <button type="button" class="btn" data-value="(" data-type="left">(</button>
+    <button type="button" class="btn" data-value=")" data-type="right">)</button>
+    <button type="button" class="btn" data-value="%" data-type="%">%</button>
+    <button type="button" class="btn" data-value="C" data-type="C">CE</button>
+    <button type="button" class="btn" data-value="7" data-type="num">7</button>
+    <button type="button" class="btn" data-value="8" data-type="num">8</button>
+    <button type="button" class="btn" data-value="9" data-type="num">9</button>
+    <button type="button" class="btn" data-value="÷" data-type="op">÷</button>
+    <button type="button" class="btn" data-value="4" data-type="num">4</button>
+    <button type="button" class="btn" data-value="5" data-type="num">5</button>
+    <button type="button" class="btn" data-value="6" data-type="num">6</button>
+    <button type="button" class="btn" data-value="×" data-type="op">×</button>
+    <button type="button" class="btn" data-value="1" data-type="num">1</button>
+    <button type="button" class="btn" data-value="2" data-type="num">2</button>
+    <button type="button" class="btn" data-value="3" data-type="num">3</button>
+    <button type="button" class="btn" data-value="-" data-type="op">-</button>
+    <button type="button" class="btn" data-value="0" data-type="num">0</button>
+    <button type="button" class="btn" data-value="." data-type=".">.</button>
+    <button type="button" class="btn" data-value="=" data-type="=">=</button>
+    <button type="button" class="btn" data-value="+" data-type="op">+</button>
+  </div>
+
+  <script src="./calculator.js"></script>
+</body>
+
+</html>
