@@ -35,7 +35,10 @@ h1 {
         background: #efefef;
       }
 
-      &:nth-child(2), &:nth-child(3), &:nth-child(4), &:nth-child(4n + 5) {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(4n + 5) {
         background: #e5edff;
 
         &:hover {
@@ -49,7 +52,7 @@ h1 {
     width: 100%;
     position: relative;
     margin-bottom: 2rem;
-    
+
   }
 
   &__oldResult {
@@ -65,7 +68,7 @@ h1 {
       transition: all .1s;
     }
   }
-  
+
   &__newResult {
     width: 100%;
     padding: 1.5rem 1rem .5rem 1rem;
@@ -74,7 +77,7 @@ h1 {
     border: 1px solid #cfcfcf;
     border-radius: .5rem;
     transition: all .3s;
-    
+
     &.active {
       transition: all .1s;
       padding: 2rem 1rem 0 1rem;
